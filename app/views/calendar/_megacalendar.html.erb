@@ -40,7 +40,8 @@
 
 <% html_title translate 'calendar' %>
 <h2><%= translate 'calendar' %></h2>
-<center><div id='calendar'" style="<%= calendar_style %>"></div></center>
+
+<div id="calendar"></div>
 
 <%
   js_locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first rescue nil
